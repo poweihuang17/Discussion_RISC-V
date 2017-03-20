@@ -1,0 +1,33 @@
+Using built-in specs.
+COLLECT_GCC=riscv64-unknown-elf-gcc
+COLLECT_LTO_WRAPPER=/home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/lto-wrapper
+Target: riscv64-unknown-elf
+Configured with: /home/bachelor/peter270/risc-v/riscv-cpu/rocket-chip/riscv-tools/riscv-gnu-toolchain/build/src/newlib-gcc/configure --target=riscv64-unknown-elf --prefix=/home/bachelor/peter270/risc-v/rocket_tools-install --disable-shared --disable-threads --enable-languages=c,c++ --with-system-zlib --enable-tls --with-newlib --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --enable-checking=yes --disable-multilib --with-abi=lp64d --with-arch=rv64g
+Thread model: single
+gcc version 6.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-save-temps' '-v' '-o' 'test22' '-march=rv64g' '-mabi=lp64d'
+ /home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/cc1 -E -quiet -v -imultilib . test2.c -march=rv64g -mabi=lp64d -fpch-preprocess -o test2.i
+ignoring nonexistent directory "/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/sys-include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/include
+ /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/include-fixed
+ /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/include
+End of search list.
+COLLECT_GCC_OPTIONS='-save-temps' '-v' '-o' 'test22' '-march=rv64g' '-mabi=lp64d'
+ /home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/cc1 -fpreprocessed test2.i -quiet -dumpbase test2.c -march=rv64g -mabi=lp64d -auxbase test2 -version -o test2.s
+GNU C11 (GCC) version 6.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 4.9.2, GMP version 6.0.0, MPFR version 3.1.2-p3, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+GNU C11 (GCC) version 6.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 4.9.2, GMP version 6.0.0, MPFR version 3.1.2-p3, MPC version 1.0.2, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: b05e15a42baf368479b0228738c1235b
+COLLECT_GCC_OPTIONS='-save-temps' '-v' '-o' 'test22' '-march=rv64g' '-mabi=lp64d'
+ /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv64g -mabi=lp64d -o test2.o test2.s
+GNU assembler version 2.28.51 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.28.51.20170101
+COMPILER_PATH=/home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/:/home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/:/home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/:/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/:/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/:/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/bin/
+LIBRARY_PATH=/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/:/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/lib/../lib64/lp64d/:/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/lib/
+COLLECT_GCC_OPTIONS='-save-temps' '-v' '-o' 'test22' '-march=rv64g' '-mabi=lp64d'
+ /home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/collect2 -plugin /home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/liblto_plugin.so -plugin-opt=/home/bachelor/peter270/risc-v/rocket_tools-install/libexec/gcc/riscv64-unknown-elf/6.1.0/lto-wrapper -plugin-opt=-fresolution=test2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc -melf64lriscv -o test22 /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/lib/crt0.o /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/crtbegin.o -L/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0 -L/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/lib/../lib64/lp64d -L/home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/../../../../riscv64-unknown-elf/lib test2.o -lgcc --start-group -lc -lgloss --end-group -lgcc /home/bachelor/peter270/risc-v/rocket_tools-install/lib/gcc/riscv64-unknown-elf/6.1.0/crtend.o
+COLLECT_GCC_OPTIONS='-save-temps' '-v' '-o' 'test22' '-march=rv64g' '-mabi=lp64d'
